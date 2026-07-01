@@ -1,18 +1,18 @@
 class Subswap < Formula
   desc "Claude, Codex and ChatGPT account switcher with quota-aware auto-swap"
   homepage "https://github.com/x0c/subswap"
-  version "0.3.26"
+  version "0.3.27"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/x0c/subswap/releases/download/v0.3.26/subswap-v0.3.26-aarch64-apple-darwin.tar.gz"
-      sha256 "bbaf48c00c6d7172f293496c84d46563c2b03f5ad0d6e9c339d74814977dfb3d"
+      url "https://github.com/x0c/subswap/releases/download/v0.3.27/subswap-v0.3.27-aarch64-apple-darwin.tar.gz"
+      sha256 "255d27da731a3fc113373a920eed0523bb0e3d605bc0c1892ea6bbcafa22e75c"
     end
 
     on_intel do
-      url "https://github.com/x0c/subswap/releases/download/v0.3.26/subswap-v0.3.26-x86_64-apple-darwin.tar.gz"
-      sha256 "6155fde834d2fe4ebda80f87656ec0b1de73bb1ba9b5b2d6a369f11409bca32c"
+      url "https://github.com/x0c/subswap/releases/download/v0.3.27/subswap-v0.3.27-x86_64-apple-darwin.tar.gz"
+      sha256 "baeb968016c98245bb894d30a01c4465d485fd2865dbb7bf58483e5ac173c708"
     end
   end
 
@@ -20,13 +20,13 @@ class Subswap < Formula
     depends_on "dbus"
 
     on_arm do
-      url "https://github.com/x0c/subswap/releases/download/v0.3.26/subswap-v0.3.26-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "e868206b0d45a432ac33bfb8509a8eafacbe47c5fa97613159a214a0a78bd2e6"
+      url "https://github.com/x0c/subswap/releases/download/v0.3.27/subswap-v0.3.27-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "c3ddd3bf8b7249c145d4c9c86e2c11ce4fa56fb1c3bf405dd8eb1dad9a07b003"
     end
 
     on_intel do
-      url "https://github.com/x0c/subswap/releases/download/v0.3.26/subswap-v0.3.26-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "54b88022bc43595240865a124de88a404fb0d918c27a4f88928c789441271433"
+      url "https://github.com/x0c/subswap/releases/download/v0.3.27/subswap-v0.3.27-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "57f631ca2098ab27fd0057418f8153653f8d14805b006e24fb556c146ca3958c"
     end
   end
 

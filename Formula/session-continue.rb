@@ -3,8 +3,8 @@ class SessionContinue < Formula
 
   desc "Terminal session picker and handoff tool for Claude Code and Codex CLI"
   homepage "https://github.com/x0c/session-continue"
-  url "https://github.com/x0c/session-continue/archive/refs/tags/v0.6.1.tar.gz"
-  sha256 "8d6d87bb2be5ead753c5d9c508d03c8625cedfc17a9812d31a80ac7569cc2dcf"
+  url "https://github.com/x0c/session-continue/archive/refs/tags/v0.6.2.tar.gz"
+  sha256 "9faafcd5999ce0b06f9957ed9e55ca16630cbaca94ea82e7dcde79f696fb91b8"
   license "MIT"
 
   depends_on "python@3.12"

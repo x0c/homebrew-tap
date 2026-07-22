@@ -3,12 +3,14 @@ class Pickup < Formula
 
   desc "Terminal session picker and handoff tool for Claude Code, Codex CLI, OpenCode, and Kimi Code"
   homepage "https://github.com/x0c/pickup"
-  url "https://github.com/x0c/pickup/archive/refs/tags/v0.23.7.tar.gz"
-  sha256 "3a0d26f1533448e295f60edb1735db4dc47c49a0f5080d275334cac3f7c750de"
+  url "https://github.com/x0c/pickup/archive/refs/tags/v0.24.0.tar.gz"
+  sha256 "f473bbb1a5ae945d654d27e5cd4d774f346a87b722efeb13b3b9528569bd4f8f"
   license "MIT"
 
   depends_on "python@3.12"
   depends_on "tmux"
+  depends_on "maturin" => :build
+  depends_on "rust" => :build
 
   resource "linkify-it-py" do
     url "https://files.pythonhosted.org/packages/2e/c9/06ea13676ef354f0af6169587ae292d3e2406e212876a413bf9eece4eb23/linkify_it_py-2.1.0.tar.gz"
@@ -61,7 +63,11 @@ class Pickup < Formula
   end
 
   def install
-    virtualenv_install_with_resources
+    venv = virtualenv_create(libexec, "python3.12")
+    venv.pip_install resources
+    system "maturin", "build", "--release", "--interpreter", libexec/"bin/python", "--out", "dist"
+    venv.pip_install Dir["dist/*.whl"].first
+    bin.install_symlink libexec/"bin/pickup"
   end
 
   test do

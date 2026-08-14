@@ -3,8 +3,8 @@ class Pickup < Formula
 
   desc "Terminal session picker and handoff tool for Claude Code, Codex CLI, OpenCode, and Kimi Code"
   homepage "https://github.com/x0c/pickup"
-  url "https://github.com/x0c/pickup/archive/refs/tags/v0.24.102.tar.gz"
-  sha256 "8dba60b3748236f6edbe63e774b0f5c92b43cb7db5cca95c356b089690f4b5ea"
+  url "https://github.com/x0c/pickup/archive/refs/tags/v0.24.103.tar.gz"
+  sha256 "69f00777d554e680e8d8f3c51d71b6e5f1d0909f9961ee1ba4c1013f0753a0b4"
   license "MIT"
 
   depends_on "python@3.12"

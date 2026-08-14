@@ -1,8 +1,8 @@
 class CursorModeModel < Formula
   desc "Auto-switch Cursor Agent CLI models by Mode"
   homepage "https://github.com/x0c/cursor-mode-model"
-  url "https://github.com/x0c/cursor-mode-model/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "96dde1a100f5c0ae1109ed528c0fd7075d5e2893488c1d5e4ec062341b30b7d6"
+  url "https://github.com/x0c/cursor-mode-model/archive/refs/tags/v1.0.0.tar.gz"
+  sha256 "d7a239012788f09f75e8a28d6e78ae767e9eddac3eb1025e6d9d3dc26485c7c9"
   license "MIT"
 
   depends_on "go" => :build

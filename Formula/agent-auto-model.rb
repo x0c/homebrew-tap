@@ -1,8 +1,8 @@
 class AgentAutoModel < Formula
   desc "Auto-switch agent CLI models by Mode (Cursor Agent and Codex)"
   homepage "https://github.com/x0c/agent-auto-model"
-  url "https://github.com/x0c/agent-auto-model/archive/refs/tags/v2.0.3.tar.gz"
-  sha256 "6b042f08c7f72584553e397da65cc02db69d7e7a6161f09636340dea73e7f671"
+  url "https://github.com/x0c/agent-auto-model/archive/refs/tags/v2.0.4.tar.gz"
+  sha256 "12fda56e65b7bbc90a6e4f348a8aa47c60e8bb7b90bd86147bcba68b80f4ea02"
   license "MIT"
 
   depends_on "go" => :build

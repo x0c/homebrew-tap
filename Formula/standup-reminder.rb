@@ -1,8 +1,8 @@
 class StandupReminder < Formula
   desc "macOS daemon that nudges you to get up and move after too long at your Mac"
   homepage "https://github.com/x0c/standup-reminder"
-  url "https://github.com/x0c/standup-reminder/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "f73148ece599c115e412c0c34c87a50fce1b02b6845c25ac732613eb221edf13"
+  url "https://github.com/x0c/standup-reminder/archive/refs/tags/v0.2.1.tar.gz"
+  sha256 "c525d12b570b8e32c3b2e816f6ca7de6120c7b79538b65dae0d21da802c21f34"
   license "MIT"
 
   depends_on :macos

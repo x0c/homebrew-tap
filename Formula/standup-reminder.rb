@@ -14,7 +14,7 @@ class StandupReminder < Formula
   service do
     run [opt_bin/"standup-reminder", "start"]
     keep_alive true
-      log_path var/"log/standup-reminder.log"
+    log_path var/"log/standup-reminder.log"
     error_log_path var/"log/standup-reminder.log"
   end
 

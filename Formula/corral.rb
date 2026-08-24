@@ -3,8 +3,8 @@ class Corral < Formula
 
   desc "Terminal session handoff tool for Claude Code, Codex CLI, OpenCode, Kimi Code, Cursor, and Pi"
   homepage "https://github.com/x0c/corral"
-  url "https://github.com/x0c/corral/archive/refs/tags/v0.24.143.tar.gz"
-  sha256 "5d85d0df7fb5e4f8ac53d3ef2a6f191c8ea66a4961fc59b3c244b1e67302d2e3"
+  url "https://github.com/x0c/corral/archive/refs/tags/v0.24.144.tar.gz"
+  sha256 "3d39760bdaa0eb4f3dd228db258138e0491b767779cf1ab9ecfe8d8543291f43"
   license "MIT"
 
   depends_on "python@3.12"

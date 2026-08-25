@@ -1,16 +1,31 @@
+# 由 cli/scripts/homebrew_formula.py 生成，请勿手改；改生成器后随下次发版重新生成。
+# 安装策略：有预编译 wheel 的平台直接安装（不拉 Rust 工具链）；缺 wheel 的平台源码编译兜底。
 class Corral < Formula
   include Language::Python::Virtualenv
 
   desc "Terminal session handoff tool for Claude Code, Codex CLI, OpenCode, Kimi Code, Cursor, and Pi"
   homepage "https://github.com/x0c/corral"
-  url "https://github.com/x0c/corral/archive/refs/tags/v0.24.144.tar.gz"
-  sha256 "3d39760bdaa0eb4f3dd228db258138e0491b767779cf1ab9ecfe8d8543291f43"
+  version "0.24.144"
   license "MIT"
+
+  on_macos do
+    url "https://github.com/x0c/corral/releases/download/v0.24.144/corral-0.24.144-cp310-abi3-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl"
+    sha256 "0992707f620128b6fd9a1e28d18220f4b29647bbe40118ec55cfaa25a1fce7be"
+  end
+
+  on_linux do
+    on_intel do
+      url "https://github.com/x0c/corral/releases/download/v0.24.144/corral-0.24.144-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      sha256 "0793c0826b41909d639df0c9cc6a510c44cfa26ffa954e86f7cfbf337458b4b7"
+    end
+    on_arm do
+      url "https://github.com/x0c/corral/releases/download/v0.24.144/corral-0.24.144-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
+      sha256 "53f05e8c1c536417d3f127cbc19ea20ec090683091a9c30e0f21546d6fc015bf"
+    end
+  end
 
   depends_on "python@3.12"
   depends_on "tmux"
-  depends_on "maturin" => :build
-  depends_on "rust" => :build
 
   resource "linkify-it-py" do
     url "https://files.pythonhosted.org/packages/2e/c9/06ea13676ef354f0af6169587ae292d3e2406e212876a413bf9eece4eb23/linkify_it_py-2.1.0.tar.gz"
@@ -65,8 +80,14 @@ class Corral < Formula
   def install
     venv = virtualenv_create(libexec, "python3.12")
     venv.pip_install resources
-    system "maturin", "build", "--release", "--interpreter", libexec/"bin/python", "--out", "dist"
-    venv.pip_install Dir["dist/*.whl"].first
+    if (wheel = Dir["*.whl"].first)
+      # 预编译 wheel：直接安装，无需 Rust 工具链
+      venv.pip_install wheel
+    else
+      # 该平台无预编译包：源码编译兜底
+      system "maturin", "build", "--release", "--interpreter", libexec/"bin/python", "--out", "dist"
+      venv.pip_install Dir["dist/*.whl"].first
+    end
     bin.install_symlink libexec/"bin/corral"
   end
 

@@ -1,8 +1,8 @@
 class AgentAutoModel < Formula
-  desc "Auto-switch agent CLI models by Mode (Cursor Agent and Codex)"
+  desc "UNSTABLE — not recommended. Auto-switch agent CLI models by Mode"
   homepage "https://github.com/x0c/agent-auto-model"
-  url "https://github.com/x0c/agent-auto-model/archive/refs/tags/v2.0.6.tar.gz"
-  sha256 "3c4ebf18fba0aa79a5e068c9ed3a7e5ec7a7a90cf6cdce78ea9fd43d115a0dc8"
+  url "https://github.com/x0c/agent-auto-model/archive/refs/tags/v2.0.7.tar.gz"
+  sha256 "c72f40b80709321685f1a870e9abb421f8a4d247fef3af51cd644e84b67eb57d"
   license "MIT"
 
   depends_on "go" => :build

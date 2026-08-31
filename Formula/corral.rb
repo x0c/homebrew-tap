@@ -14,17 +14,18 @@ class Corral < Formula
   end
 
   on_linux do
-    url "https://github.com/x0c/corral/archive/refs/tags/v0.24.158.tar.gz"
-    sha256 "d53246efdf7744670f755db0a55242efa17e62395f3bcca14c9433950eeef4a1"
+    on_intel do
+      url "https://github.com/x0c/corral/releases/download/v0.24.158/corral-0.24.158-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      sha256 "34245ab19ca527f2da48efb2ae32477b97e36e8feed1ec71c20adcb3730e69ec"
+    end
+    on_arm do
+      url "https://github.com/x0c/corral/releases/download/v0.24.158/corral-0.24.158-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
+      sha256 "5d950de1439c4cba3e10678e1b912bee7bf66a36d828bc6f6b83a824981d59d9"
+    end
   end
 
   depends_on "python@3.12"
   depends_on "tmux"
-
-  on_linux do
-    depends_on "maturin" => :build
-    depends_on "rust" => :build
-  end
 
   resource "linkify-it-py" do
     url "https://files.pythonhosted.org/packages/2e/c9/06ea13676ef354f0af6169587ae292d3e2406e212876a413bf9eece4eb23/linkify_it_py-2.1.0.tar.gz"

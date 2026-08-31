@@ -1,18 +1,18 @@
 class Subswap < Formula
-  desc "Claude, Codex, Kimi and Cursor account switcher with quota-aware auto-swap"
+  desc "Claude, Codex, Kimi, Cursor and OpenCode account switcher with quota-aware auto-swap"
   homepage "https://github.com/x0c/subswap"
-  version "1.6.1"
+  version "1.6.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/x0c/subswap/releases/download/v1.6.1/subswap-v1.6.1-aarch64-apple-darwin.tar.gz"
-      sha256 "75a0dd587de6feac560e8d6bfbc60527eba070aad6f8feda524de2c40df4d615"
+      url "https://github.com/x0c/subswap/releases/download/v1.6.2/subswap-v1.6.2-aarch64-apple-darwin.tar.gz"
+      sha256 "8326320f7a116cdfe96206a6c55410a2a12e391f65ebbde7b08b3c4a55287380"
     end
 
     on_intel do
-      url "https://github.com/x0c/subswap/releases/download/v1.6.1/subswap-v1.6.1-x86_64-apple-darwin.tar.gz"
-      sha256 "b75135c9159adad0565fe97e520d9391de052bd2a08b6be77ddf5573cb4b7430"
+      url "https://github.com/x0c/subswap/releases/download/v1.6.2/subswap-v1.6.2-x86_64-apple-darwin.tar.gz"
+      sha256 "36d973625da62150a693d889bd44dde02590b8879c6a09fa067d4609e2862191"
     end
   end
 
@@ -20,13 +20,13 @@ class Subswap < Formula
     depends_on "dbus"
 
     on_arm do
-      url "https://github.com/x0c/subswap/releases/download/v1.6.1/subswap-v1.6.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "e8eac4eaaf8c9373f2743c7d5086d0f30b240ad8ac19032281f704b6a719dd0a"
+      url "https://github.com/x0c/subswap/releases/download/v1.6.2/subswap-v1.6.2-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "6051748dd07b3ffa46dc3fb454f0d2fd93bf7f00c2d1e1930eed4ee776459274"
     end
 
     on_intel do
-      url "https://github.com/x0c/subswap/releases/download/v1.6.1/subswap-v1.6.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "61e9b495365b7f9d5d4271eca86380d7da30292e61816061a2b49d833ae8b639"
+      url "https://github.com/x0c/subswap/releases/download/v1.6.2/subswap-v1.6.2-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "933b667ef550dca2d7745aaeef8348f1bbae15741ddbcad2497bd2e7341e2b97"
     end
   end
 

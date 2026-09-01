@@ -16,11 +16,11 @@ class Corral < Formula
   on_linux do
     on_intel do
       url "https://github.com/x0c/corral/releases/download/v0.24.160/corral-0.24.160-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
-      sha256 "4ebc6cb0a352bd7be68383a8a92e951d934aa86c0227bb0c5a6caf62aed90d02"
+      sha256 "fcde0fe1c98cfa3b0978c8fb60419686c8b1ab92ea2a5693b84c13025c4002ee"
     end
     on_arm do
       url "https://github.com/x0c/corral/releases/download/v0.24.160/corral-0.24.160-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
-      sha256 "5611fc2af9f37e52053ad71e0820fa67b5ef2c1d7395f49f92a1cbd8360bd288"
+      sha256 "d4cd24a8f326f8d82044465262dcd05d125d448c64cc50db6e6867841fd2e739"
     end
   end
 

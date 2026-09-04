@@ -1,6 +1,6 @@
 cask "cpu-killer" do
-  version "1.0.1"
-  sha256 "2b06b956a9e6989a5a92fe481171b4bdf6262e0e4e0b0dade7c20182ace4c2c2"
+  version "1.0.6"
+  sha256 "ea684ab4e792f0f2163dc9324e3b1a42d5a6d35b30b1784371fb50cba5526a86"
 
   url "https://github.com/x0c/CPUKiller/releases/download/v#{version}/CPU-Killer-#{version}.dmg"
   name "CPU Killer"

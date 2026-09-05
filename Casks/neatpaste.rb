@@ -1,6 +1,6 @@
 cask "neatpaste" do
-  version "1.0.5"
-  sha256 "14d0122b733427161fb87b4d1f593ee6c867c2d8cc9a09c577275fd31f3ac6d4"
+  version "1.0.7"
+  sha256 "e6318850f4c2866e594d6f5af046e0bcf046929146baf5331f9b75304ace3908"
 
   url "https://github.com/NeatMacApps/NeatPaste/releases/download/v#{version}/NeatPaste-#{version}.dmg"
   name "NeatPaste"

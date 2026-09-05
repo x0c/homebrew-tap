@@ -9,22 +9,23 @@ class Corral < Formula
   license "MIT"
 
   on_macos do
-    url "https://github.com/x0c/corral/releases/download/v0.24.163/corral-0.24.163-cp310-abi3-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl"
-    sha256 "295cce826f484b1d216a5d0c18ecc834d917592e299ebf50d62fa4138643c359"
+    url "https://github.com/x0c/corral/releases/download/v0.24.163/corral-0.24.162-cp310-abi3-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl"
+    sha256 "7702a98a3ff1f7664d170ef630c7e2776b408c04ed236ea2940830ad61712891"
   end
 
   on_linux do
-    url "https://github.com/x0c/corral/archive/refs/tags/v0.24.163.tar.gz"
-    sha256 "53f302eb05c39fbe6d8bc5464a6a91b72ce0e82a36f3ac8540632b08bd472eb3"
+    on_intel do
+      url "https://github.com/x0c/corral/releases/download/v0.24.163/corral-0.24.162-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      sha256 "b2f6b477e0cf4312d340a7cee4bb4410568c2a7a6ab4a6170a0099a0e8ac2d1f"
+    end
+    on_arm do
+      url "https://github.com/x0c/corral/releases/download/v0.24.163/corral-0.24.162-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
+      sha256 "b522605de7cc8d921ac1cd28073fc4cedc88fcd925c162e5047c152b9eef6044"
+    end
   end
 
   depends_on "python@3.12"
   depends_on "tmux"
-
-  on_linux do
-    depends_on "maturin" => :build
-    depends_on "rust" => :build
-  end
 
   resource "linkify-it-py" do
     url "https://files.pythonhosted.org/packages/2e/c9/06ea13676ef354f0af6169587ae292d3e2406e212876a413bf9eece4eb23/linkify_it_py-2.1.0.tar.gz"

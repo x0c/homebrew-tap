@@ -10,21 +10,22 @@ class Corral < Formula
 
   on_macos do
     url "https://github.com/x0c/corral/releases/download/v0.24.166/corral-0.24.166-cp310-abi3-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl"
-    sha256 "d00010f4e218728e7890b09bca0e3ca52f0994e983da1ab68758429675bfc3b4"
+    sha256 "713cd3535178e2f6e6a8a1150986d8e62f7ad35a3aa3236adf1be3745cef07a6"
   end
 
   on_linux do
-    url "https://github.com/x0c/corral/archive/refs/tags/v0.24.166.tar.gz"
-    sha256 "c732522a3420e16ba049237efd5e7eb9c0781eaf7c62c76b05315d8d8979c2c9"
+    on_intel do
+      url "https://github.com/x0c/corral/releases/download/v0.24.166/corral-0.24.166-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      sha256 "bb881b2d226f5731bf9186113094663fef64978d21235bc4775e56bee3115134"
+    end
+    on_arm do
+      url "https://github.com/x0c/corral/releases/download/v0.24.166/corral-0.24.166-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
+      sha256 "d24bcf0aaf83dd08a6d3cf5a5f1e82cef903d204826327895edd3c85ba62e32f"
+    end
   end
 
   depends_on "python@3.12"
   depends_on "tmux"
-
-  on_linux do
-    depends_on "maturin" => :build
-    depends_on "rust" => :build
-  end
 
   resource "linkify-it-py" do
     url "https://files.pythonhosted.org/packages/2e/c9/06ea13676ef354f0af6169587ae292d3e2406e212876a413bf9eece4eb23/linkify_it_py-2.1.0.tar.gz"

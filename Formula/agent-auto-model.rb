@@ -1,8 +1,8 @@
 class AgentAutoModel < Formula
   desc "UNSTABLE — not recommended. Auto-switch agent CLI models by Mode"
   homepage "https://github.com/x0c/agent-auto-model"
-  url "https://github.com/x0c/agent-auto-model/archive/refs/tags/v2.0.8.tar.gz"
-  sha256 "1e546d1663a269342cd87aac27f3a6a9f440f4a038616206002522168e6e7437"
+  url "https://github.com/x0c/agent-auto-model/archive/refs/tags/v2.0.9.tar.gz"
+  sha256 "2f41f44d3a711c331b8b6e272a208cc15985c3a72362aac23e66a251d21cca33"
   license "MIT"
 
   depends_on "go" => :build

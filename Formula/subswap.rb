@@ -1,18 +1,18 @@
 class Subswap < Formula
   desc "Claude, Codex, Kimi, Cursor and OpenCode account switcher with quota-aware auto-swap"
   homepage "https://github.com/x0c/subswap"
-  version "1.7.3"
+  version "1.7.4"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/x0c/subswap/releases/download/v1.7.3/subswap-v1.7.3-aarch64-apple-darwin.tar.gz"
-      sha256 "843407e39450a4754f2575b274bbfdaf43dfce52fe1a426e83dfa5236ca1755d"
+      url "https://github.com/x0c/subswap/releases/download/v1.7.4/subswap-v1.7.4-aarch64-apple-darwin.tar.gz"
+      sha256 "68b859e6ed3ce2ee9b991a018efa88080b0722286e0fef97f3a257fed35a9d84"
     end
 
     on_intel do
-      url "https://github.com/x0c/subswap/releases/download/v1.7.3/subswap-v1.7.3-x86_64-apple-darwin.tar.gz"
-      sha256 "973e977949dd72af06192d3eceb0d17af655ea31e44bd097de4ecc269edfc063"
+      url "https://github.com/x0c/subswap/releases/download/v1.7.4/subswap-v1.7.4-x86_64-apple-darwin.tar.gz"
+      sha256 "e9abf247f949332d163a8654d281841ec55da4295ff31a8c232e93c25fadda51"
     end
   end
 
@@ -20,13 +20,13 @@ class Subswap < Formula
     depends_on "dbus"
 
     on_arm do
-      url "https://github.com/x0c/subswap/releases/download/v1.7.3/subswap-v1.7.3-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "3272e290458f86d9fc8c08bf81a6652f708a65313cb4b53b5807a198b06b535b"
+      url "https://github.com/x0c/subswap/releases/download/v1.7.4/subswap-v1.7.4-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "88d9fc7b8532684d61f64e70cfdc4ca7ea2193a107f8060ee8396a2152418035"
     end
 
     on_intel do
-      url "https://github.com/x0c/subswap/releases/download/v1.7.3/subswap-v1.7.3-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "761d79cb38735e01279f75ee2e0eedfca5fbe81ced9021bfa8e0b6e9b44aaef4"
+      url "https://github.com/x0c/subswap/releases/download/v1.7.4/subswap-v1.7.4-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "29cf06e76ae0ece3fe5cadedeb330ea8701354812e5becc6a25074f272922671"
     end
   end
 

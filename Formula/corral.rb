@@ -5,27 +5,32 @@ class Corral < Formula
 
   desc "Terminal session handoff tool for Claude Code, Codex CLI, OpenCode, Kimi Code, Cursor, and Pi"
   homepage "https://github.com/x0c/corral"
-  version "0.24.168"
+  version "0.24.170"
   license "MIT"
 
   on_macos do
-    url "https://github.com/x0c/corral/releases/download/v0.24.168/corral-0.24.168-cp310-abi3-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl"
-    sha256 "4946c256939d5e9efb74ba474740eb003486f628f50b923c6c1a97b8dd33059a"
+    url "https://github.com/x0c/corral/releases/download/v0.24.170/corral-0.24.170-cp310-abi3-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl"
+    sha256 "d8295c01d31b46638e21091f95b6aa2815522907b7eac8be080ccd3b813a32a1"
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/x0c/corral/releases/download/v0.24.168/corral-0.24.168-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
-      sha256 "178a734a4fa762d9759e8c7f3cb269dbecf11a6ec2e69c021b2c47d28301dfc5"
+      url "https://github.com/x0c/corral/releases/download/v0.24.170/corral-0.24.170-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      sha256 "53c8a69244dbe71eda645e54596631054c95307480bc87e8abf7a9809420e543"
     end
     on_arm do
-      url "https://github.com/x0c/corral/releases/download/v0.24.168/corral-0.24.168-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
-      sha256 "8f1f2b145e6f82f630d9d32950e597659df15aa89ca3d4fec8f8d34deaa3e2f7"
+      url "https://github.com/x0c/corral/releases/download/v0.24.170/corral-0.24.170-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
+      sha256 "7e05479464e36ae8b309a5e8cd54ae1954e066c7e7265db2f23bb8f58657c5de"
     end
   end
 
   depends_on "python@3.12"
   depends_on "tmux"
+
+  resource "sesskit" do
+    url "https://github.com/x0c/sesskit/releases/download/v0.1.0/sesskit-0.1.0.tar.gz"
+    sha256 "b10346b7eb6608e9b4b58c2ac5f19ebcf2287a7e02fc0cabbe81218f9700d4e2"
+  end
 
   resource "linkify-it-py" do
     url "https://files.pythonhosted.org/packages/2e/c9/06ea13676ef354f0af6169587ae292d3e2406e212876a413bf9eece4eb23/linkify_it_py-2.1.0.tar.gz"

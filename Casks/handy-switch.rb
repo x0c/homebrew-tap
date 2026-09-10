@@ -1,6 +1,6 @@
 cask "handy-switch" do
-  version "1.0.16"
-  sha256 "9e1e18b27b9a829869b32ff5c1ce093fd2e10cb97bc72628a0b6a5e02da8a768"
+  version "1.0.17"
+  sha256 "dcbc001c0723ac04f6f31142cf4277dc7ac3781fbd9e00ac7f3f26ab22d5e82b"
 
   url "https://github.com/x0c/HandySwitch/releases/download/v#{version}/HandySwitch-#{version}.dmg"
   name "HandySwitch"

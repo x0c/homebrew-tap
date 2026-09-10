@@ -9,23 +9,22 @@ class Corral < Formula
   license "MIT"
 
   on_macos do
-    url "https://github.com/x0c/corral/releases/download/v0.24.170/corral-0.24.170-cp310-abi3-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl"
-    sha256 "d8295c01d31b46638e21091f95b6aa2815522907b7eac8be080ccd3b813a32a1"
+    url "https://github.com/x0c/corral/releases/download/v0.24.170/corral-0.24.170-cp310-abi3-macosx_11_0_arm64.whl"
+    sha256 "45a5120435014c59cd106988a025ca622a0edab06786dfed2fb352008bd3d2f6"
   end
 
   on_linux do
-    on_intel do
-      url "https://github.com/x0c/corral/releases/download/v0.24.170/corral-0.24.170-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
-      sha256 "53c8a69244dbe71eda645e54596631054c95307480bc87e8abf7a9809420e543"
-    end
-    on_arm do
-      url "https://github.com/x0c/corral/releases/download/v0.24.170/corral-0.24.170-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
-      sha256 "7e05479464e36ae8b309a5e8cd54ae1954e066c7e7265db2f23bb8f58657c5de"
-    end
+    url "https://github.com/x0c/corral/archive/refs/tags/v0.24.170.tar.gz"
+    sha256 "cb44704e866aa0d32ef3679e255311236059d6a19411f55a7674776b8441ec8b"
   end
 
   depends_on "python@3.12"
   depends_on "tmux"
+
+  on_linux do
+    depends_on "maturin" => :build
+    depends_on "rust" => :build
+  end
 
   resource "sesskit" do
     url "https://github.com/x0c/sesskit/releases/download/v0.1.0/sesskit-0.1.0.tar.gz"

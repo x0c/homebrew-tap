@@ -10,7 +10,7 @@ class Corral < Formula
 
   on_macos do
     url "https://github.com/x0c/corral/releases/download/v0.24.184/corral-0.24.184-cp310-abi3-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl"
-    sha256 "f7d8efc4d23184c142efe13c39e46209808dc4144d8db6a85579bbe465c67917"
+    sha256 "75385d4620a637cf70858ee9acdc5b75551ca149f682d6c586cd325a97327941"
   end
 
   on_linux do

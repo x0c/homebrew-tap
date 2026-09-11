@@ -5,22 +5,22 @@ class Corral < Formula
 
   desc "Terminal session handoff tool for Claude Code, Codex CLI, OpenCode, Kimi Code, Cursor, and Pi"
   homepage "https://github.com/x0c/corral"
-  version "0.24.175"
+  version "0.24.176"
   license "MIT"
 
   on_macos do
-    url "https://github.com/x0c/corral/releases/download/v0.24.175/corral-0.24.175-cp310-abi3-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl"
-    sha256 "5eae9f86e95fb534b88f629d28f331c9959f87a68054c9fe2164efea6225a81d"
+    url "https://github.com/x0c/corral/releases/download/v0.24.176/corral-0.24.176-cp310-abi3-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl"
+    sha256 "bccb69619bc7ee9872d95d6e9525ec61e79455d8c5c435fd14c11c3ab7d06fee"
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/x0c/corral/releases/download/v0.24.175/corral-0.24.175-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
-      sha256 "55deb47c7bf378116b750c39726cf0db4e2d49a8120651d7a9ea28e892714395"
+      url "https://github.com/x0c/corral/releases/download/v0.24.176/corral-0.24.176-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      sha256 "11b29b92a6bf3bd9a16d03a918a896e5df40583ddbba1db54ee7add923201be2"
     end
     on_arm do
-      url "https://github.com/x0c/corral/releases/download/v0.24.175/corral-0.24.175-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
-      sha256 "d2f1c3cc31d42de01a67b3a5b24ab59c4b34aaf388073efdebe7514755ab7e56"
+      url "https://github.com/x0c/corral/releases/download/v0.24.176/corral-0.24.176-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
+      sha256 "7ed9eaaca7675eb32a400b85c19a7dc295361e3e08c522562a0567e917cc06ec"
     end
   end
 
@@ -28,8 +28,8 @@ class Corral < Formula
   depends_on "tmux"
 
   resource "sesskit" do
-    url "https://github.com/x0c/sesskit/releases/download/v0.1.0/sesskit-0.1.0.tar.gz"
-    sha256 "b10346b7eb6608e9b4b58c2ac5f19ebcf2287a7e02fc0cabbe81218f9700d4e2"
+    url "https://github.com/x0c/sesskit/releases/download/v0.1.1/sesskit-0.1.1.tar.gz"
+    sha256 "f1fb2bfa995efa0a6c71b6b3712275d96baec195ca3774091c82caa4bddb3e3b"
   end
 
   resource "linkify-it-py" do

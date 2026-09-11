@@ -5,26 +5,27 @@ class Corral < Formula
 
   desc "Terminal session handoff tool for Claude Code, Codex CLI, OpenCode, Kimi Code, Cursor, and Pi"
   homepage "https://github.com/x0c/corral"
-  version "0.24.183"
+  version "0.24.184"
   license "MIT"
 
   on_macos do
-    url "https://github.com/x0c/corral/releases/download/v0.24.183/corral-0.24.183-cp310-abi3-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl"
-    sha256 "ffedd437b1db288e8267f26fc34a2e724806867251d7d77891f55693e000e8b8"
+    url "https://github.com/x0c/corral/releases/download/v0.24.184/corral-0.24.184-cp310-abi3-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl"
+    sha256 "f7d8efc4d23184c142efe13c39e46209808dc4144d8db6a85579bbe465c67917"
   end
 
   on_linux do
-    url "https://github.com/x0c/corral/archive/refs/tags/v0.24.183.tar.gz"
-    sha256 "f639404acf0d53ad1c9941403bd2db9b7171b8321a12cf753829f8f27a0ce975"
+    on_intel do
+      url "https://github.com/x0c/corral/releases/download/v0.24.184/corral-0.24.184-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      sha256 "4e2836d7097b15adc4294ae53b50858aaefeb6429787fff4872df7fcf46ac8d5"
+    end
+    on_arm do
+      url "https://github.com/x0c/corral/releases/download/v0.24.184/corral-0.24.184-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
+      sha256 "391d6d46ddbbe0323b257b1a4b182b48f0405676ba20a3fbbb558f8b83955272"
+    end
   end
 
   depends_on "python@3.12"
   depends_on "tmux"
-
-  on_linux do
-    depends_on "maturin" => :build
-    depends_on "rust" => :build
-  end
 
   resource "sesskit" do
     url "https://github.com/x0c/sesskit/releases/download/v0.1.1/sesskit-0.1.1.tar.gz"

@@ -9,8 +9,8 @@ class Corral < Formula
   license "MIT"
 
   on_macos do
-    url "https://github.com/x0c/corral/archive/refs/tags/v0.24.194.tar.gz"
-    sha256 "a96ceb7048b20434056bea0594b506edaea6d8924fd5bfb657ed17547d58d601"
+    url "https://github.com/x0c/corral/releases/download/v0.24.194/corral-0.24.194-cp310-abi3-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl"
+    sha256 "ae96f775fee125bcca0ffe781b5a47e70bdf0adb7af2ed4bdf34b870530e30fa"
   end
 
   on_linux do
@@ -26,11 +26,6 @@ class Corral < Formula
 
   depends_on "python@3.12"
   depends_on "tmux"
-
-  on_macos do
-    depends_on "maturin" => :build
-    depends_on "rust" => :build
-  end
 
   resource "sesskit" do
     url "https://github.com/x0c/sesskit/releases/download/v0.1.2/sesskit-0.1.2.tar.gz"

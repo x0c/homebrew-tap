@@ -9,20 +9,23 @@ class Corral < Formula
   license "MIT"
 
   on_macos do
-    url "https://github.com/x0c/corral/archive/refs/tags/v0.24.194.tar.gz"
-    sha256 "a96ceb7048b20434056bea0594b506edaea6d8924fd5bfb657ed17547d58d601"
+    url "https://github.com/x0c/corral/releases/download/v0.24.194/corral-0.24.194-cp310-abi3-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl"
+    sha256 "ae96f775fee125bcca0ffe781b5a47e70bdf0adb7af2ed4bdf34b870530e30fa"
   end
 
   on_linux do
-    url "https://github.com/x0c/corral/archive/refs/tags/v0.24.194.tar.gz"
-    sha256 "a96ceb7048b20434056bea0594b506edaea6d8924fd5bfb657ed17547d58d601"
+    on_intel do
+      url "https://github.com/x0c/corral/releases/download/v0.24.194/corral-0.24.194-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      sha256 "5f8dd745866ddf8273fa3ef57ddfc828e0a95b072aecd7713357bcdfc04a62df"
+    end
+    on_arm do
+      url "https://github.com/x0c/corral/releases/download/v0.24.194/corral-0.24.194-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
+      sha256 "853314620446664d3859080a9dd5db6994b84d78596b5c7854413dce866f0787"
+    end
   end
 
   depends_on "python@3.12"
   depends_on "tmux"
-
-  depends_on "maturin" => :build
-  depends_on "rust" => :build
 
   resource "sesskit" do
     url "https://github.com/x0c/sesskit/releases/download/v0.1.2/sesskit-0.1.2.tar.gz"

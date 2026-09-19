@@ -1,6 +1,6 @@
 cask "mac-resource-monitor" do
-  version "1.1.4"
-  sha256 "9eff9cf5424fde10738184f3fe2c6f5ee9355a470b1ceefbc680eb02ba5d8ce0"
+  version "1.1.5"
+  sha256 "49c4904c03fc2d518a211c46977c1d9e3e70a9fd6d12ffee60e0b501fcb6a722"
 
   url "https://github.com/x0c/MacResourceMonitor/releases/download/v#{version}/Mac-Resource-Monitor-#{version}.dmg"
   name "Mac Resource Monitor"

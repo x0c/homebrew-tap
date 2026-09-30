@@ -5,17 +5,17 @@ class Corral < Formula
 
   desc "Terminal session handoff tool for Claude Code, Codex CLI, OpenCode, Kimi Code, Cursor, and Pi"
   homepage "https://github.com/x0c/corral"
-  version "0.24.236"
+  version "0.24.237"
   license "MIT"
 
   on_macos do
-    url "https://github.com/x0c/corral/releases/download/v0.24.236/corral-0.24.236-cp310-abi3-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl"
-    sha256 "504a975b5ce5da9a18687cf7f56fd3acba54fe44c1f7e609d6d81f13f793c915"
+    url "https://github.com/x0c/corral/releases/download/v0.24.237/corral-0.24.237-cp310-abi3-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl"
+    sha256 "fadab84f62746571f655b9856fafaf5993f446d05a05ea184598cd4869620644"
   end
 
   on_linux do
-    url "https://github.com/x0c/corral/archive/refs/tags/v0.24.236.tar.gz"
-    sha256 "8c90e823c6d7219b77af6f05c0e3a8bfd6e9fb2dc968c875a00c99250f2efa60"
+    url "https://github.com/x0c/corral/archive/refs/tags/v0.24.237.tar.gz"
+    sha256 "b595f04c378ca53777128fad5fe37ac8340c46cd7c05d824a356237621140eef"
   end
 
   depends_on "python@3.12"

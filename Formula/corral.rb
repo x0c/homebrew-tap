@@ -10,21 +10,22 @@ class Corral < Formula
 
   on_macos do
     url "https://github.com/x0c/corral/releases/download/v0.24.246/corral-0.24.246-cp310-abi3-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl"
-    sha256 "43a261f06a42e42a479d57e88420c93c48a3f28d660e3c24b5ee4502e97103fb"
+    sha256 "e415788dc6a30d88feec8c157a193c4773b15264180ba3f9cc03e1e14e877e5e"
   end
 
   on_linux do
-    url "https://github.com/x0c/corral/archive/refs/tags/v0.24.246.tar.gz"
-    sha256 "2d8b5db007815fb396576a3d2f73890f2c4ace5ae824bf82d8930d5f397ab4a6"
+    on_intel do
+      url "https://github.com/x0c/corral/releases/download/v0.24.246/corral-0.24.246-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      sha256 "96cc33ed30cfbfb92267447c27d59a527fab9935471c5a9342ee63175b825804"
+    end
+    on_arm do
+      url "https://github.com/x0c/corral/releases/download/v0.24.246/corral-0.24.246-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
+      sha256 "b1336ea9ac84dfefac07ce03374dcc5d21cb65b6972fd29005e341622c5b6d43"
+    end
   end
 
   depends_on "python@3.12"
   depends_on "tmux"
-
-  on_linux do
-    depends_on "maturin" => :build
-    depends_on "rust" => :build
-  end
 
   resource "sesskit" do
     url "https://github.com/x0c/sesskit/releases/download/v0.2.5/sesskit-0.2.5.tar.gz"

@@ -5,17 +5,17 @@ class Corral < Formula
 
   desc "Terminal session handoff tool for Claude Code, Codex CLI, OpenCode, Kimi Code, Cursor, and Pi"
   homepage "https://github.com/x0c/corral"
-  version "0.24.264"
+  version "0.24.265"
   license "MIT"
 
   on_macos do
-    url "https://github.com/x0c/corral/releases/download/v0.24.264/corral-0.24.264-cp310-abi3-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl"
-    sha256 "151051fdffbeca58d5fdc0d4392fab9cf340da636fd634873a8ce5467ffb5b3c"
+    url "https://github.com/x0c/corral/releases/download/v0.24.265/corral-0.24.265-cp310-abi3-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl"
+    sha256 "9aa0a070c78a22d6a7175bd5dc84e87079a2d12b42076d555be8626153b570ac"
   end
 
   on_linux do
-    url "https://github.com/x0c/corral/archive/refs/tags/v0.24.264.tar.gz"
-    sha256 "0bc576a72cfdc8d8a763728fcdf4760bc6456384e0a1aa8915a119f96c300f29"
+    url "https://github.com/x0c/corral/archive/refs/tags/v0.24.265.tar.gz"
+    sha256 "73c7c6e83b475f36d472cb951f564cad23cce2667b462f20669665a913338ab7"
   end
 
   depends_on "python@3.12"
@@ -27,8 +27,8 @@ class Corral < Formula
   end
 
   resource "sesskit" do
-    url "https://github.com/x0c/sesskit/releases/download/v0.2.7/sesskit-0.2.7.tar.gz"
-    sha256 "a630bef67e0f34911574430def2c68e87d485976b510a72e29f1d11f6ca9b400"
+    url "https://github.com/x0c/sesskit/releases/download/v0.2.8/sesskit-0.2.8.tar.gz"
+    sha256 "73ce1541c7c0c3b7e277b5007156b5ef78d6024f41ce87126c2aa1ed992862a5"
   end
 
   resource "linkify-it-py" do

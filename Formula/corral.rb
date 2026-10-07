@@ -5,30 +5,28 @@ class Corral < Formula
 
   desc "Terminal session handoff tool for Claude Code, Codex CLI, OpenCode, Kimi Code, Cursor, and Pi"
   homepage "https://github.com/x0c/corral"
-  version "0.24.269"
+  version "0.24.271"
   license "MIT"
 
   on_macos do
-    url "https://github.com/x0c/corral/releases/download/v0.24.269/corral-0.24.269-cp310-abi3-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl"
-    sha256 "86b4e6cb3ee7b7c69ebdbc19065663887f1c900c1607c8901201b19b788da023"
+    url "https://github.com/x0c/corral/archive/refs/tags/v0.24.271.tar.gz"
+    sha256 "de2f9c6bfad9c3360f7db0bb0fb52b301d7f6bc2225d591a96b9f8cac027f171"
   end
 
   on_linux do
-    url "https://github.com/x0c/corral/archive/refs/tags/v0.24.269.tar.gz"
-    sha256 "56e5526e24fbd14692e046db7ab6947e3447eed521e3eaf8ae69b2d22b14770b"
+    url "https://github.com/x0c/corral/archive/refs/tags/v0.24.271.tar.gz"
+    sha256 "de2f9c6bfad9c3360f7db0bb0fb52b301d7f6bc2225d591a96b9f8cac027f171"
   end
 
   depends_on "python@3.12"
   depends_on "tmux"
 
-  on_linux do
-    depends_on "maturin" => :build
-    depends_on "rust" => :build
-  end
+  depends_on "maturin" => :build
+  depends_on "rust" => :build
 
   resource "sesskit" do
-    url "https://github.com/x0c/sesskit/releases/download/v0.2.8/sesskit-0.2.8.tar.gz"
-    sha256 "73ce1541c7c0c3b7e277b5007156b5ef78d6024f41ce87126c2aa1ed992862a5"
+    url "https://github.com/x0c/sesskit/releases/download/v0.2.10/sesskit-0.2.10.tar.gz"
+    sha256 "5d0f642189613528ac58a995e113f21dc4f9530ff5983c8e217f1ea7370b8982"
   end
 
   resource "linkify-it-py" do

@@ -35,7 +35,7 @@ brew services start standup-reminder
 brew install --cask x0c/tap/corral-mac
 ```
 
-从「应用程序」打开 Corral，与开发机配对。更新时运行 `brew update`，再运行 `brew upgrade --cask x0c/tap/corral-mac`。已有官方 DMG 安装可在安装命令加 `--adopt`，登记到 Homebrew 而不替换应用。若要用 tap 版本覆盖安装，先退出 Corral，改用 `--force`，并确认 tap 版本不比已装版本旧。配对、设置和 Keychain 数据保留，应用内更新也仍可使用。
+从「应用程序」打开 Corral，与开发机配对。已有官方 DMG 安装先运行 `brew install --cask --adopt x0c/tap/corral-mac`，登记到 Homebrew。登记后运行 `brew update`，再运行 `brew upgrade --cask x0c/tap/corral-mac` 更新。内置更新仍然可用，当前 Homebrew 能识别比安装记录更新的应用。安装时报已有应用，不能单凭这一点判断两套更新方式冲突。不要把 `--force` 当作常规修复，它可能用 tap 的旧版本覆盖较新的应用。配对、设置和 Keychain 数据保留。详见 [Homebrew 对应用内更新的处理](https://docs.brew.sh/FAQ#how-does-brew-upgrade-handle-apps-that-update-themselves)。
 
 客户端 Cask `corral-mac` 与开发机配方 `corral` 是两个独立软件包。[客户端配对指南](https://github.com/corral-dev/corral-apple/blob/main/README.zh-CN.md#与开发机配对)。
 

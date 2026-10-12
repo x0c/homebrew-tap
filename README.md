@@ -35,7 +35,7 @@ Install the signed native client (macOS 26+):
 brew install --cask x0c/tap/corral-mac
 ```
 
-Open Corral from Applications and pair with your Corral host. Update with `brew update` and `brew upgrade --cask x0c/tap/corral-mac`. For an existing official DMG installation, add `--adopt` to register it without replacing the app. To replace it with the tap version, quit Corral and use `--force` instead, after checking that the tap version is not older. Pairing, settings and Keychain data are preserved. Application updates also remain available.
+Open Corral from Applications and pair with your Corral host. For an existing official DMG installation, register it first with `brew install --cask --adopt x0c/tap/corral-mac`. Once registered, run `brew update` and `brew upgrade --cask x0c/tap/corral-mac` for updates. The built-in updater also remains available; current Homebrew can recognize a bundle newer than its installation record. An existing-App install error alone does not prove an updater conflict. Do not routinely use `--force`: it can replace a newer app with an older tap artifact. Pairing, settings and Keychain data are preserved. [Homebrew's self-updating-app rules](https://docs.brew.sh/FAQ#how-does-brew-upgrade-handle-apps-that-update-themselves).
 
 The client Cask `corral-mac` and the host formula `corral` are separate packages. [Client setup](https://github.com/corral-dev/corral-apple#pair-with-your-host).
 

@@ -10,7 +10,7 @@ class Pickup < Formula
   depends_on "x0c/tap/corral"
 
   def install
-    bin.install_symlink Formula["x0c/tap/corral"].opt_bin/"corral" => "pickup"
+    bin.install_symlink formula_opt_bin("x0c/tap/corral")/"corral" => "pickup"
     (doc/"README").write <<~EOS
       pickup has been renamed to Corral.
       This formula remains so `brew upgrade pickup` keeps working via x0c/tap/corral.

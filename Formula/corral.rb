@@ -7,6 +7,7 @@ class Corral < Formula
   homepage "https://github.com/corral-dev/corral"
   version "0.24.292"
   license "MIT"
+  revision 1
 
   on_macos do
     url "https://github.com/corral-dev/corral/releases/download/v0.24.292/corral-0.24.292-cp310-abi3-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl"
@@ -30,6 +31,16 @@ class Corral < Formula
   resource "sesskit" do
     url "https://github.com/x0c/sesskit/releases/download/v0.2.11/sesskit-0.2.11-py3-none-any.whl"
     sha256 "3150b9cc1dc5a4ea45d31819378e90b977d60a5063a84f3a08510ebd073d44bd"
+  end
+
+  resource "websockets" do
+    url "https://files.pythonhosted.org/packages/09/ce/3929538b2b9918f5eee623fbf3346893973191f6df93f19bbda097bd7bb7/websockets-17.0.1-py3-none-any.whl"
+    sha256 "c6be9cba65c65cc76dfa3d4619e359ff02a4476c74e179b215236c11a0b32345"
+  end
+
+  resource "packaging" do
+    url "https://files.pythonhosted.org/packages/7a/c2/920ef838e2f0028c8262f16101ec09ebd5969864e5a64c4c05fad0617c56/packaging-26.1-py3-none-any.whl"
+    sha256 "5d9c0669c6285e491e0ced2eee587eaf67b670d94a19e94e3984a481aba6802f"
   end
 
   resource "linkify-it-py" do
@@ -101,6 +112,7 @@ class Corral < Formula
   end
 
   test do
+    system libexec/"bin/python", "-m", "pip", "check"
     system libexec/"bin/python", "-c", "import corral._native"
     assert_match "corral", shell_output("#{bin}/corral --help")
   end

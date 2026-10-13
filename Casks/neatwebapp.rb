@@ -1,6 +1,6 @@
 cask "neatwebapp" do
-  version "0.3.26"
-  sha256 "5abbb82b6f6c282db7bce4bc9eca1de00fe4372ac8ba8fe6e4651b233b118c9e"
+  version "0.3.27"
+  sha256 "b1c23dddb6d437054fb770c459a4202895095e35d68a4298fe5d2d2ce09a37b5"
 
   url "https://github.com/NeatMacApps/NeatWebApp/releases/download/v#{version}/NeatWebApp-#{version}.dmg"
   name "NeatWebApp"

@@ -1,6 +1,6 @@
 cask "mac-resource-monitor" do
-  version "1.1.5"
-  sha256 "49c4904c03fc2d518a211c46977c1d9e3e70a9fd6d12ffee60e0b501fcb6a722"
+  version "1.1.6"
+  sha256 "9d3a3f180fe89836e1da3fadf6b930939d41bb3edddf03f04305c4c9856bfdce"
 
   url "https://github.com/x0c/MacResourceMonitor/releases/download/v#{version}/Mac-Resource-Monitor-#{version}.dmg"
   name "Mac Resource Monitor"
@@ -11,7 +11,11 @@ cask "mac-resource-monitor" do
 
   app "Mac Resource Monitor.app"
 
+  # 包内自带的 mrm 命令行：brew 安装/升级时自动链到 PATH，无需手动装。
+  binary "#{appdir}/Mac Resource Monitor.app/Contents/MacOS/mrm", target: "mrm"
+
   zap trash: [
     "~/Library/Preferences/top.caozc.MacResourceMonitor.plist",
+    "~/.local/bin/mrm",
   ]
 end

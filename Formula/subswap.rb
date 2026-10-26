@@ -1,5 +1,5 @@
 class Subswap < Formula
-  desc "Claude, Codex, Kimi, Cursor and OpenCode account switcher with quota-aware auto-swap"
+  desc "Switch Claude Code, Codex, Kimi Code, Cursor, OpenCode and Command Code accounts"
   homepage "https://github.com/x0c/subswap"
   version "1.16.6"
   license "MIT"

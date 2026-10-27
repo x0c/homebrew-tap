@@ -14,17 +14,18 @@ class Corral < Formula
   end
 
   on_linux do
-    url "https://github.com/corral-dev/corral/archive/refs/tags/v0.24.356.tar.gz"
-    sha256 "8aeb66f7eeb472b95f421275d408dc51195d57a6edb1f71415647763459a0bce"
+    on_intel do
+      url "https://github.com/corral-dev/corral/releases/download/v0.24.356/corral-0.24.356-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      sha256 "7060896d6b7c93fa5b225b3fd54d2fcd9762ac13cd788d50c7888cf61dc2f9c1"
+    end
+    on_arm do
+      url "https://github.com/corral-dev/corral/releases/download/v0.24.356/corral-0.24.356-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
+      sha256 "36fcc8746e22c09e66c343a04c1c8c580f25d66062d7035e010949a936cf7214"
+    end
   end
 
   depends_on "python@3.12"
   depends_on "tmux"
-
-  on_linux do
-    depends_on "maturin" => :build
-    depends_on "rust" => :build
-  end
 
   resource "sesskit" do
     url "https://github.com/x0c/sesskit/releases/download/v0.2.21/sesskit-0.2.21-py3-none-any.whl"

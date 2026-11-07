@@ -27,6 +27,24 @@ After installing `standup-reminder`, start it as a background service (launchd):
 brew services start standup-reminder
 ```
 
+## Native macOS Utilities
+
+Install the signed and notarized apps below on supported macOS versions:
+
+```bash
+brew install --cask x0c/tap/neatwebapp
+brew install --cask x0c/tap/neatpaste
+brew install --cask x0c/tap/neateditor
+brew install --cask x0c/tap/handy-switch
+brew install --cask x0c/tap/mac-resource-monitor
+```
+
+- **[NeatWebApp](https://github.com/NeatMacApps/NeatWebApp)** (macOS 15+): focused website apps with a notch launcher and floating activity Dock.
+- **[NeatPaste](https://github.com/NeatMacApps/NeatPaste)**: local clipboard history in the menu bar.
+- **[NeatEditor](https://github.com/NeatMacApps/NeatEditor)**: a fast, distraction-free native text editor.
+- **[HandySwitch](https://github.com/x0c/HandySwitch)**: everyday menu-bar toggles.
+- **[MacResourceMonitor](https://github.com/x0c/MacResourceMonitor)**: find and end CPU-hungry processes.
+
 ## Corral for Mac
 
 Install the signed native client (macOS 26+):

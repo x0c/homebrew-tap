@@ -27,6 +27,24 @@ Corral 开发机 CLI 必须使用完整名称 `x0c/tap/corral`。不要运行 `b
 brew services start standup-reminder
 ```
 
+## 原生 macOS 工具
+
+以下应用均已签名并公证，请按各应用支持的 macOS 版本安装：
+
+```bash
+brew install --cask x0c/tap/neatwebapp
+brew install --cask x0c/tap/neatpaste
+brew install --cask x0c/tap/neateditor
+brew install --cask x0c/tap/handy-switch
+brew install --cask x0c/tap/mac-resource-monitor
+```
+
+- **[NeatWebApp](https://github.com/NeatMacApps/NeatWebApp)**（macOS 15+）：从刘海启动网站应用，用悬浮活动 Dock 收起窗口。
+- **[NeatPaste](https://github.com/NeatMacApps/NeatPaste)**：菜单栏中的本地剪贴板历史。
+- **[NeatEditor](https://github.com/NeatMacApps/NeatEditor)**：启动迅速、专注写作的原生文本编辑器。
+- **[HandySwitch](https://github.com/x0c/HandySwitch)**：常用菜单栏开关。
+- **[MacResourceMonitor](https://github.com/x0c/MacResourceMonitor)**：查看并结束高 CPU 占用进程。
+
 ## Corral Mac 客户端
 
 安装已签名的原生客户端（macOS 26+）：

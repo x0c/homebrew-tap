@@ -5,22 +5,22 @@ class Corral < Formula
 
   desc "Terminal session handoff tool for Claude Code, Codex CLI, OpenCode, Cursor, and Pi"
   homepage "https://github.com/corral-dev/corral"
-  version "0.24.363"
+  version "0.24.364"
   license "MIT"
 
   on_macos do
-    url "https://github.com/corral-dev/corral/releases/download/v0.24.363/corral-0.24.363-cp310-abi3-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl"
-    sha256 "6361db2f97dead7574724c4bb89e74c5c45ae846c7d9a2c5a0e7450cf2517749"
+    url "https://github.com/corral-dev/corral/releases/download/v0.24.364/corral-0.24.364-cp310-abi3-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl"
+    sha256 "973ca8df2578fb6d5d35a62534157b36bd64a548a39ac6525fc8801364252616"
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/corral-dev/corral/releases/download/v0.24.363/corral-0.24.363-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
-      sha256 "1219d793577c1772cfc8950c6fa3afe4afe5d6f9ec17d458993a21e014eeeef3"
+      url "https://github.com/corral-dev/corral/releases/download/v0.24.364/corral-0.24.364-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      sha256 "3e2943e14e49bd001d3b1ca1fb1b9312c9d65032cfede58b2552cebc44a8d598"
     end
     on_arm do
-      url "https://github.com/corral-dev/corral/releases/download/v0.24.363/corral-0.24.363-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
-      sha256 "99692064bde43559391d8b6669f4733fd0162863717d7c8a788dd2ff30b9a9c9"
+      url "https://github.com/corral-dev/corral/releases/download/v0.24.364/corral-0.24.364-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
+      sha256 "89f40433fa2042bcfa8db12b48d6da4d106c2750053812bec829f56bcae43df8"
     end
   end
 

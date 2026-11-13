@@ -1,6 +1,6 @@
 cask "neateditor" do
-  version "1.0.32"
-  sha256 "718d48841331fc41d3f3df93f07d8a8348342e7ff72508f886e1fdf1f2244983"
+  version "1.0.33"
+  sha256 "5a17050b7a49f169fe9a676c7e45328f52a807490ccbd3a769a400df0d63cd09"
 
   url "https://github.com/NeatMacApps/NeatEditor/releases/download/v#{version}/NeatEditor-#{version}.dmg"
   name "NeatEditor"

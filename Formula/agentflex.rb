@@ -1,30 +1,30 @@
 class Agentflex < Formula
   desc "Animated, shareable card of your coding-agent week"
   homepage "https://github.com/corral-dev/agentflex"
-  version "0.2.0"
+  version "0.3.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/corral-dev/agentflex/releases/download/v0.2.0/agentflex-aarch64-apple-darwin"
-      sha256 "93152d4514d69fbf9bf8d3e739720715fe73e774c8cc5ac1a81404c8c1367c94"
+      url "https://github.com/corral-dev/agentflex/releases/download/v0.3.2/agentflex-aarch64-apple-darwin"
+      sha256 "f9bb719219dcef2e46b300f01bfa2b921f6cf7d5ab1a62a4c75c34cf5ba1b5aa"
     end
 
     on_intel do
-      url "https://github.com/corral-dev/agentflex/releases/download/v0.2.0/agentflex-x86_64-apple-darwin"
-      sha256 "9dcb04fabeb90e06a6157572f885ba0004d33ef5ed102242f51aabbee45c398d"
+      url "https://github.com/corral-dev/agentflex/releases/download/v0.3.2/agentflex-x86_64-apple-darwin"
+      sha256 "7d76f9683cc1402715cc05ab7098c6697d9d1dc3be915f360d2dd509b1565a6c"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/corral-dev/agentflex/releases/download/v0.2.0/agentflex-aarch64-unknown-linux-musl"
-      sha256 "85a888b6f380b77687e4103bd25f766cdf0907f838f3f8a78b19f1a8973f9c18"
+      url "https://github.com/corral-dev/agentflex/releases/download/v0.3.2/agentflex-aarch64-unknown-linux-musl"
+      sha256 "6552c6f7f739370e7ac0b649103cfaad8feca2ef70d319be89b275b4417332d7"
     end
 
     on_intel do
-      url "https://github.com/corral-dev/agentflex/releases/download/v0.2.0/agentflex-x86_64-unknown-linux-musl"
-      sha256 "6d7d79aeda12caccaa9bbcf1b88b051338b330fb40de85692fb65abcff3622a0"
+      url "https://github.com/corral-dev/agentflex/releases/download/v0.3.2/agentflex-x86_64-unknown-linux-musl"
+      sha256 "9cb7baa991613f6845bf33f285177241c804324a623396b28b9c326208cedf4e"
     end
   end
 

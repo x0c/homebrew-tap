@@ -5,22 +5,22 @@ class Corral < Formula
 
   desc "Terminal session handoff tool for Claude Code, Codex CLI, OpenCode, Cursor, Pi, and Antigravity"
   homepage "https://github.com/corral-dev/corral"
-  version "0.24.368"
+  version "0.24.369"
   license "MIT"
 
   on_macos do
-    url "https://github.com/corral-dev/corral/releases/download/v0.24.368/corral-0.24.368-cp310-abi3-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl"
-    sha256 "09fbe7938d3c214fd96037d6c0775508ec99bcbfb7cd35a72f7cd5168307d8e4"
+    url "https://github.com/corral-dev/corral/releases/download/v0.24.369/corral-0.24.369-cp310-abi3-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl"
+    sha256 "c9e2a39d7dbe7387f9af6846945b488598fdf2c4b43c75bffdb038204ec1ef20"
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/corral-dev/corral/releases/download/v0.24.368/corral-0.24.368-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl"
-      sha256 "75312b3f68581a33783724dfb0b4bc44fa7ffe0fb7f90de4b44e02801b4611c8"
+      url "https://github.com/corral-dev/corral/releases/download/v0.24.369/corral-0.24.369-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      sha256 "1ced67172384b428654fe75aa399b195e68585527ab5c69eb8c8b4fb138bfaf2"
     end
     on_arm do
-      url "https://github.com/corral-dev/corral/releases/download/v0.24.368/corral-0.24.368-cp310-abi3-manylinux2014_aarch64.manylinux_2_17_aarch64.whl"
-      sha256 "9799c874729175cd5e3d06ccb946369fec53483812145d2dc50a7b0307a083f0"
+      url "https://github.com/corral-dev/corral/releases/download/v0.24.369/corral-0.24.369-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
+      sha256 "379334fb25a94bf7f327a22784e73980e369e1efb89536b9a628817799bfd678"
     end
   end
 
@@ -28,8 +28,8 @@ class Corral < Formula
   depends_on "tmux"
 
   resource "sesskit" do
-    url "https://github.com/x0c/sesskit/releases/download/v0.3.7/sesskit-0.3.7-py3-none-any.whl"
-    sha256 "216e9c0568ecb69dd291b505d7e55b683fc6b2cfeec301d04651ff2dd912bf92"
+    url "https://github.com/x0c/sesskit/releases/download/v0.3.8/sesskit-0.3.8-py3-none-any.whl"
+    sha256 "d171bdba754b2baa6d51c0a787c59c1d44220980fb6cabd816266d220f995783"
   end
 
   resource "agent-session-control" do

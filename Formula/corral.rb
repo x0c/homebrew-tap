@@ -15,12 +15,12 @@ class Corral < Formula
 
   on_linux do
     on_intel do
-      url "https://github.com/corral-dev/corral/releases/download/v1.0.1/corral-1.0.1-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
-      sha256 "f071b5f38a4f98fab807d9cae8eabe2a44b49c4b22663a63cd2aeb7d203235c6"
+      url "https://github.com/corral-dev/corral/releases/download/v1.0.1/corral-1.0.1-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl"
+      sha256 "23d6bc314f4bdfff71229b7d33b07fac8ba1b4982df7c48069a1c57f053d3722"
     end
     on_arm do
-      url "https://github.com/corral-dev/corral/releases/download/v1.0.1/corral-1.0.1-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
-      sha256 "3ef6ce38823e01dd73007257797d297d75d53da17b7c5a627b454a5ebc1c1963"
+      url "https://github.com/corral-dev/corral/releases/download/v1.0.1/corral-1.0.1-cp310-abi3-manylinux2014_aarch64.manylinux_2_17_aarch64.whl"
+      sha256 "ccf71ec9a52811667c51244a1e559ab68502de77aca77a07870c3485b50c7d60"
     end
   end
 

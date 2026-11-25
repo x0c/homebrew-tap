@@ -5,22 +5,22 @@ class Corral < Formula
 
   desc "Terminal session handoff tool for Claude Code, Codex CLI, OpenCode, Cursor, Pi, and Antigravity"
   homepage "https://github.com/corral-dev/corral"
-  version "1.0.2"
+  version "1.0.3"
   license "MIT"
 
   on_macos do
-    url "https://github.com/corral-dev/corral/releases/download/v1.0.2/corral-1.0.2-cp310-abi3-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl"
-    sha256 "65a2fc3319e0bf073a7a0f9ace56a87b7ea50f421c903f217b2f2302244e2b45"
+    url "https://github.com/corral-dev/corral/releases/download/v1.0.3/corral-1.0.3-cp310-abi3-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl"
+    sha256 "d9f972450b57a50c41bd1b70dfd7666089703494b3e005328856f63943b9f999"
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/corral-dev/corral/releases/download/v1.0.2/corral-1.0.2-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
-      sha256 "499548ff3dcbfb70e59ac86fe8118adf3bc63ad47058ef4f8d323c9611fe026e"
+      url "https://github.com/corral-dev/corral/releases/download/v1.0.3/corral-1.0.3-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+      sha256 "1987420927a6cf6e18e293d604a9a1c0cc7b6592acdda27c5ea488c41a0aca12"
     end
     on_arm do
-      url "https://github.com/corral-dev/corral/releases/download/v1.0.2/corral-1.0.2-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
-      sha256 "c42c5c41fce8a6f175a352ffea51cae24a7f36231e1ae0c524a15e8958cb7816"
+      url "https://github.com/corral-dev/corral/releases/download/v1.0.3/corral-1.0.3-cp310-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
+      sha256 "8e090a079534be62e7256f5a077d00bf6436ea06bdff8c31c2672041c2d6cc0e"
     end
   end
 
@@ -29,14 +29,14 @@ class Corral < Formula
 
   on_macos do
     resource "sesskit" do
-      url "https://github.com/x0c/sesskit/releases/download/v0.3.12/sesskit-0.3.12-cp310-abi3-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl"
-      sha256 "1a254e574d283efb7622ea9c42483a2ee882a4241d8feab95b950625f6fb42b1"
+      url "https://github.com/x0c/sesskit/releases/download/v0.3.15/sesskit-0.3.15-cp310-abi3-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl"
+      sha256 "081ec59ef51c0eab946b3ef689cac05e314014659e0d599e5ac019ae9fb42b75"
     end
   end
   on_linux do
     resource "sesskit" do
-      url "https://github.com/x0c/sesskit/releases/download/v0.3.12/sesskit-0.3.12-py3-none-any.whl"
-      sha256 "ddef8050ded3cc24f85c988d46be8b2d63d792ac091af148ee83fdfc9d626b4c"
+      url "https://github.com/x0c/sesskit/releases/download/v0.3.15/sesskit-0.3.15-py3-none-any.whl"
+      sha256 "64badf3eecad7c7a64c3bff1014e5232dd4b201eef72e160f736cd6d550f4cbe"
     end
   end
 

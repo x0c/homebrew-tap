@@ -1,30 +1,30 @@
 class AgentDbctl < Formula
   desc "Zero-JVM database execution gate and audit CLI for coding agents"
   homepage "https://github.com/x0c/agent-dbctl"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/x0c/agent-dbctl/releases/download/v0.1.0/agent-dbctl_v0.1.0_darwin_arm64.tar.gz"
-      sha256 "3f6e8ec5f3372b6a04aed12d2539405fcf31b561712aceed3e690f5e78971d89"
+      url "https://github.com/x0c/agent-dbctl/releases/download/v0.2.0/agent-dbctl_v0.2.0_darwin_arm64.tar.gz"
+      sha256 "bf5328cc6868e0692dee9215abeb1f9f4290d7f005f9636f7e8f4faca6baba36"
     end
 
     on_intel do
-      url "https://github.com/x0c/agent-dbctl/releases/download/v0.1.0/agent-dbctl_v0.1.0_darwin_amd64.tar.gz"
-      sha256 "6a7fdf2829513f3ad6e0d8d65b66402c140fd247513bc839f4ea7843d0f5e599"
+      url "https://github.com/x0c/agent-dbctl/releases/download/v0.2.0/agent-dbctl_v0.2.0_darwin_amd64.tar.gz"
+      sha256 "0a30031b9661dc22edb8a650c28dec0776e52cd7ba5c5c3fef8d8ac060e4ca02"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/x0c/agent-dbctl/releases/download/v0.1.0/agent-dbctl_v0.1.0_linux_arm64.tar.gz"
-      sha256 "be8509167ef2f122a4e6c9b651803c1777009bdebae55a53d1b33ea7c883b113"
+      url "https://github.com/x0c/agent-dbctl/releases/download/v0.2.0/agent-dbctl_v0.2.0_linux_arm64.tar.gz"
+      sha256 "cff883262e676084271f609251fbafebc216383e584c0ce7429623c9a5bf80ba"
     end
 
     on_intel do
-      url "https://github.com/x0c/agent-dbctl/releases/download/v0.1.0/agent-dbctl_v0.1.0_linux_amd64.tar.gz"
-      sha256 "62d89a196295400760b61a986ecf0610bf6ad14aab1f60d288f7576f0c8495ca"
+      url "https://github.com/x0c/agent-dbctl/releases/download/v0.2.0/agent-dbctl_v0.2.0_linux_amd64.tar.gz"
+      sha256 "5713e73745fd28b3058ef2294edc9cb7f92aa71713eee6d70bde706d375a78d1"
     end
   end
 
@@ -34,6 +34,6 @@ class AgentDbctl < Formula
 
   test do
     ENV["AGENT_DBCTL_NO_SKILL_SYNC"] = "1"
-    assert_match "v0.1.0", shell_output("#{bin}/agent-dbctl version --json")
+    assert_match "v0.2.0", shell_output("#{bin}/agent-dbctl version --json")
   end
 end

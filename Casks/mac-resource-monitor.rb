@@ -1,6 +1,6 @@
 cask "mac-resource-monitor" do
-  version "1.1.8"
-  sha256 "83539788c64f51b781898b43694c1869154cf2fe1774fb63ceeeafebe2953324"
+  version "1.1.9"
+  sha256 "09290b86956160d4df7a785854477187b09614089d548c1a1b519da246ce3fe7"
 
   url "https://github.com/NeatMacApps/NeatMonitor/releases/download/v#{version}/Mac-Resource-Monitor-#{version}.dmg"
   name "Mac Resource Monitor"

@@ -3,7 +3,7 @@ cask "mac-resource-monitor" do
   sha256 "09290b86956160d4df7a785854477187b09614089d548c1a1b519da246ce3fe7"
 
   url "https://github.com/NeatMacApps/NeatMonitor/releases/download/v#{version}/Mac-Resource-Monitor-#{version}.dmg"
-  name "Mac Resource Monitor"
+  name "NeatMonitor"
   desc "Menu bar resource table: see CPU, memory, and network use, then end apps"
   homepage "https://github.com/NeatMacApps/NeatMonitor"
 

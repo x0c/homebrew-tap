@@ -1,6 +1,6 @@
 cask "handy-switch" do
-  version "1.0.21"
-  sha256 "3dfbefccb5bbbee16cb986a9cf7067bf0029b048fd4d883939141c90c3a5a12a"
+  version "1.0.22"
+  sha256 "f59f8af43d0590de6bd59319e466ff3dd5df67b03f1d95504e044e2a78d1b189"
 
   url "https://github.com/NeatMacApps/NeatSwitch/releases/download/v#{version}/HandySwitch-#{version}.dmg"
   name "HandySwitch"
